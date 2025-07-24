@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import myImage from './car_photos/00001.webp'
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <main className="App-main">
         <div>
           <p>
-            photo
+            <img src={myImage} alt="Description" />
           </p>
         </div>
         <div>
