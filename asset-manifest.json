@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cardle/static/css/main.f855e6bc.css",
+    "main.css": "/cardle/static/css/main.db429ffe.css",
     "main.js": "/cardle/static/js/main.a28df62a.js",
     "static/js/453.eadc638e.chunk.js": "/cardle/static/js/453.eadc638e.chunk.js",
     "static/media/logo.svg": "/cardle/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/cardle/index.html",
-    "main.f855e6bc.css.map": "/cardle/static/css/main.f855e6bc.css.map",
+    "main.db429ffe.css.map": "/cardle/static/css/main.db429ffe.css.map",
     "main.a28df62a.js.map": "/cardle/static/js/main.a28df62a.js.map",
     "453.eadc638e.chunk.js.map": "/cardle/static/js/453.eadc638e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
+    "static/css/main.db429ffe.css",
     "static/js/main.a28df62a.js"
   ]
 }
