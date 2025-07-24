@@ -1,7 +1,7 @@
 {
-  "homepage": "https://gitname.github.io/react-gh-pages",
+  "homepage": "https://3216workbench.github.io/cardle/",
   "name": "cardle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
