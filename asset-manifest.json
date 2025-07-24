@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cardle/static/css/main.b109f09c.css",
-    "main.js": "/cardle/static/js/main.885e7284.js",
+    "main.css": "/cardle/static/css/main.5213bda8.css",
+    "main.js": "/cardle/static/js/main.77f1852e.js",
     "static/js/453.eadc638e.chunk.js": "/cardle/static/js/453.eadc638e.chunk.js",
     "static/media/00001.webp": "/cardle/static/media/00001.9c21e82ce06cbaa69260.webp",
     "static/media/logo.svg": "/cardle/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/cardle/index.html",
-    "main.b109f09c.css.map": "/cardle/static/css/main.b109f09c.css.map",
-    "main.885e7284.js.map": "/cardle/static/js/main.885e7284.js.map",
+    "main.5213bda8.css.map": "/cardle/static/css/main.5213bda8.css.map",
+    "main.77f1852e.js.map": "/cardle/static/js/main.77f1852e.js.map",
     "453.eadc638e.chunk.js.map": "/cardle/static/js/453.eadc638e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b109f09c.css",
-    "static/js/main.885e7284.js"
+    "static/css/main.5213bda8.css",
+    "static/js/main.77f1852e.js"
   ]
 }
