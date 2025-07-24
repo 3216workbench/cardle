@@ -9,7 +9,7 @@ function App() {
           This is a prototype of cardle app
         </p> 
       </header>
-      <main>
+      <main className="App-main">
         <div>
           <p>
             photo
@@ -26,7 +26,7 @@ function App() {
           </p>
         </div>
       </main>
-      <footer></footer>
+      <footer className="App-footer"></footer>
     </div>
   );
 }
