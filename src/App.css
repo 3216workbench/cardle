@@ -35,3 +35,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.fixed-viewport {
+  width: 60vw;           /* 60% of viewport width */
+  height: 40vh;          /* 40% of viewport height */
+  object-fit: cover;     /* Cover the area while maintaining aspect ratio */
+}

@@ -13,7 +13,7 @@ function App() {
       <main className="App-main">
         <div>
           <p>
-            <img src={myImage} alt="Description" />
+            <img src={myImage} alt="Description" className='fixed-viewport'/>
           </p>
         </div>
         <div>
