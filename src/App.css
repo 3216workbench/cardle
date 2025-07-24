@@ -20,7 +20,7 @@
   min-width: 450px;
   display: flex;
   flex-direction: column; /* Change to column to create rows */
-  padding: 6vh;
+  padding: 5vh;
   align-items: center; /* Center items horizontally */
   font-size: 1rem;
   color: white;
