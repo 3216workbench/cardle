@@ -1,10 +1,18 @@
-import {useState} from 'react';
-import './App.css';
-import myImage from './car_photos/00001.webp';
-import car from './data/data.json';
+import { useState } from 'react';
 
 function App() {
   const options = ['Toyota', 'Honda', 'Ford', 'BMW', 'Mercedes', 'Mazda'];
+  
+  // Mock car data since the JSON import isn't available
+  const car = {
+    make: 'Toyota',
+    model: 'Camry',
+    yearBot: 2018,
+    yearTop: 2022,
+    cont: 'Asia',
+    body_type: 'Sedan',
+    gen: '8th Gen'
+  };
 
   const [carMake, setCarMake] = useState("");
   const [carModel, setCarModel] = useState("");
@@ -72,42 +80,49 @@ function App() {
   const getCellClass = (rowIndex, statusIndex) => {
     const status = score[rowIndex][statusIndex];
     
-    if (status === 1) return "circle circle-green";
-    if (status === 2) return "circle circle-red";
-    return "circle circle-white";
+    if (status === 1) return "h-12 w-full rounded flex items-center justify-center text-sm font-medium bg-green-500 text-white";
+    if (status === 2) return "h-12 w-full rounded flex items-center justify-center text-sm font-medium bg-red-500 text-white";
+    return "h-12 w-full rounded flex items-center justify-center text-sm font-medium bg-gray-200";
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          This is a prototype of cardle app
-        </p> 
+    <div className="min-h-screen bg-gray-100 p-4">
+      <header className="text-center mb-6">
+        <h1 className="text-3xl font-bold text-gray-800">Cardle Game</h1>
+        <p className="text-gray-600">This is a prototype of cardle app</p>
       </header>
-
-      <main className="App-main">
-        <section className='module'>
-          <div className='headings'>
-            <p className='heading'>{car.cont}</p>
-            <p className='heading'>{car.body_type}</p>
-            <p className='heading'>{car.gen}</p>            
+      
+      <main className="max-w-2xl mx-auto">
+        <section className="bg-white rounded-lg p-4 mb-6 shadow">
+          <div className="grid grid-cols-3 gap-4 text-center">
+            <div>
+              <p className="font-semibold">Continent</p>
+              <p className="text-blue-600">{car.cont}</p>
+            </div>
+            <div>
+              <p className="font-semibold">Body Type</p>
+              <p className="text-blue-600">{car.body_type}</p>
+            </div>
+            <div>
+              <p className="font-semibold">Generation</p>
+              <p className="text-blue-600">{car.gen}</p>
+            </div>
           </div>
         </section>
 
-        <div>
-            <img src={myImage} alt="Description" className='fixed-viewport'/>
+        <div className="bg-gray-200 h-48 mb-6 flex items-center justify-center rounded-lg">
+          <p className="text-gray-500">Car Image Placeholder</p>
         </div>
 
-        <section className='module'>
-          <div className='headings'>
-            <p className='heading'>Make</p>
-            <p className='heading'>Model</p>
-            <p className='heading'>Year</p>
+        <section className="bg-white rounded-lg p-4 mb-6 shadow">
+          <div className="grid grid-cols-3 gap-4 text-center mb-4">
+            <p className="font-semibold">Make</p>
+            <p className="font-semibold">Model</p>
+            <p className="font-semibold">Year</p>
           </div>
-
-
+          
           {[0, 1, 2, 3, 4].map(rowIndex => (
-            <div key={rowIndex} className="circles-container">
+            <div key={rowIndex} className="grid grid-cols-3 gap-4 mb-2">
               <div className={getCellClass(rowIndex, 1)}>
                 {score[rowIndex][0]}
               </div>
@@ -121,21 +136,21 @@ function App() {
           ))}
         </section>
 
-        <section>
-          <p>Curent Score</p>
-          <p>Final Score Multiplier</p>
+        <section className="bg-white rounded-lg p-4 mb-6 shadow">
+          <p className="text-center">Round: {round}/5</p>
+          <p className="text-center">Correct: {check.filter(c => c).length}/3</p>
         </section>
 
         {round < 5 && (
-          <div className="form">
-            <div className="select">
+          <div className="bg-white rounded-lg p-4 shadow">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
               <div>
                 <input 
                   type="text" 
                   list="car-makes" 
                   placeholder="Make" 
                   autoComplete="off" 
-                  className="select_input"
+                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={carMake}
                   onChange={(e) => setCarMake(e.target.value)}
                 />
@@ -151,7 +166,7 @@ function App() {
                   type="text" 
                   placeholder="Model" 
                   autoComplete="off" 
-                  className="select_input"
+                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={carModel}
                   onChange={(e) => setCarModel(e.target.value)}
                 />
@@ -162,7 +177,7 @@ function App() {
                   type="number" 
                   placeholder="Year" 
                   autoComplete="off"
-                  className="select_input"
+                  className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
                   value={carYear}
                   onChange={(e) => setCarYear(e.target.value)}
                 />
@@ -171,7 +186,7 @@ function App() {
             
             <button 
               onClick={submitHandler}
-              className="form_submit"
+              className="w-full bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition-colors font-medium"
               disabled={!carMake || !carModel || !carYear}
             >
               Submit Guess
@@ -186,9 +201,7 @@ function App() {
             <p className="mt-2">The car was: {car.make} {car.model} ({car.yearBot}-{car.yearTop})</p>
           </div>
         )}
-
       </main>
-      <footer className="App-footer"></footer>
     </div>
   );
 }
