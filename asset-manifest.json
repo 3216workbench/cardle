@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cardle/static/css/main.5d3c7465.css",
-    "main.js": "/cardle/static/js/main.1052f4b1.js",
+    "main.css": "/cardle/static/css/main.3f00d383.css",
+    "main.js": "/cardle/static/js/main.fe89c8cb.js",
     "static/js/453.eadc638e.chunk.js": "/cardle/static/js/453.eadc638e.chunk.js",
     "static/media/00001.webp": "/cardle/static/media/00001.9c21e82ce06cbaa69260.webp",
     "index.html": "/cardle/index.html",
-    "main.5d3c7465.css.map": "/cardle/static/css/main.5d3c7465.css.map",
-    "main.1052f4b1.js.map": "/cardle/static/js/main.1052f4b1.js.map",
+    "main.3f00d383.css.map": "/cardle/static/css/main.3f00d383.css.map",
+    "main.fe89c8cb.js.map": "/cardle/static/js/main.fe89c8cb.js.map",
     "453.eadc638e.chunk.js.map": "/cardle/static/js/453.eadc638e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d3c7465.css",
-    "static/js/main.1052f4b1.js"
+    "static/css/main.3f00d383.css",
+    "static/js/main.fe89c8cb.js"
   ]
 }
