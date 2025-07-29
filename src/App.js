@@ -128,8 +128,8 @@ function App() {
 
         {round < 5 && (
           <div className="form">
-            <div className="select">
-              <div>
+            <div>
+              <div className="select">
                 <input 
                   type="text" 
                   list="car-makes" 
@@ -146,7 +146,7 @@ function App() {
                 </datalist>
               </div>
               
-              <div>
+              <div className="select">
                 <input 
                   type="text" 
                   placeholder="Model" 
@@ -157,7 +157,7 @@ function App() {
                 />
               </div>
               
-              <div>
+              <div className="select">
                 <input 
                   type="number" 
                   placeholder="Year" 

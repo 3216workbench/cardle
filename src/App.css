@@ -122,6 +122,7 @@
   border-radius: 0.25rem;
   outline: none;
   padding: 0.45rem 0.5rem;
+  
 
 }
 
@@ -133,6 +134,8 @@
     outline: none;
     border-width: 2px;
     border-style: solid;
+    color: rgb(0, 0, 0);
+    background-color: white;
     border-color: rgb(15, 10, 16);
     border-image: initial;
     border-radius: 1rem;
