@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/cardle/static/css/main.3f00d383.css",
-    "main.js": "/cardle/static/js/main.fe89c8cb.js",
+    "main.css": "/cardle/static/css/main.24247532.css",
+    "main.js": "/cardle/static/js/main.0686cb31.js",
     "static/js/453.eadc638e.chunk.js": "/cardle/static/js/453.eadc638e.chunk.js",
-    "static/media/00001.webp": "/cardle/static/media/00001.9c21e82ce06cbaa69260.webp",
+    "static/media/00001source.webp": "/cardle/static/media/00001source.91b0972bde333dd5e8df.webp",
+    "static/media/00001zoom5.webp": "/cardle/static/media/00001zoom5.3ea07c8edd98f7f7957d.webp",
+    "static/media/00001zoom4.webp": "/cardle/static/media/00001zoom4.ec6b74b05026f55dfb01.webp",
+    "static/media/00001zoom3.webp": "/cardle/static/media/00001zoom3.e8af08e6376e1f232291.webp",
+    "static/media/00001random3.webp": "/cardle/static/media/00001random3.4e1cca982c85bd52177e.webp",
+    "static/media/00001random2.webp": "/cardle/static/media/00001random2.6e470fbd6d1d99fa49bc.webp",
+    "static/media/00001random4.webp": "/cardle/static/media/00001random4.f56c658635542fe62156.webp",
+    "static/media/00001zoom2.webp": "/cardle/static/media/00001zoom2.319b4f98831268c28696.webp",
+    "static/media/00001starter.webp": "/cardle/static/media/00001starter.8186f7312bc1daad9eef.webp",
+    "static/media/00001random5.webp": "/cardle/static/media/00001random5.df120e08285d36f84b21.webp",
     "index.html": "/cardle/index.html",
-    "main.3f00d383.css.map": "/cardle/static/css/main.3f00d383.css.map",
-    "main.fe89c8cb.js.map": "/cardle/static/js/main.fe89c8cb.js.map",
+    "main.24247532.css.map": "/cardle/static/css/main.24247532.css.map",
+    "main.0686cb31.js.map": "/cardle/static/js/main.0686cb31.js.map",
     "453.eadc638e.chunk.js.map": "/cardle/static/js/453.eadc638e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f00d383.css",
-    "static/js/main.fe89c8cb.js"
+    "static/css/main.24247532.css",
+    "static/js/main.0686cb31.js"
   ]
 }
