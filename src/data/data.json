@@ -1,10 +1,12 @@
 {
     "make":"Mazda",
-    "model":"Miata",
+    "model":"MX-3",
     "yearBot":2000,
     "yearTop":2010,
-    "gen":"Gen 3",
+    "dec":"'00",
     "cont":"Asia",
     "country":"Japan",
-    "body_type":"Coupe"
+    "body_type":"Coupe",
+    "photos": ["00001starter.webp","00001zoom2.webp","00001zoom3.webp","00001zoom4.webp","00001zoom5.webp","00001random2.webp","00001random3.webp","00001random4.webp","00001random5.webp","00001source.webp"],
+    "source": ""
 }
